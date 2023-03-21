@@ -1,9 +1,9 @@
 ## making the classroom as the base class?
 
 class Classroom:
-    def __init__(self, empty, occupied):
+    def __init__(self, empty, roomNum):
+        self.roomNum = roomNum
         self.empty = empty
-        self.occupied = occupied
 
     def availability(self):
         ## use an if statement using the input from the google form
@@ -11,3 +11,13 @@ class Classroom:
             return self.occupied
         else:
             return self.empty
+
+Buildings = [CST, LBC]
+CST = [100, 101, ...]
+100 = Classroom()
+
+
+buildings = [
+    [Classroom("101"), Classroom()],
+    []
+]

@@ -15,9 +15,17 @@ class Classroom:
 Buildings = [CST, LBC]
 CST = [100, 101, ...]
 100 = Classroom()
+buildings = {
+    cst:[Classroom("101"),],
+    dennis:[],
+    lbc:[],
+    carpenter:[],
+    library:[],
+    others:[],
+    runyan:[],
+    runyan:[],
+    }
 
 
-buildings = [
-    [Classroom("101"), Classroom()],
-    []
-]
+# make a building class with list of classroom classes
+# saving the data because of power failure and loss of data, write the data to a file and read from there

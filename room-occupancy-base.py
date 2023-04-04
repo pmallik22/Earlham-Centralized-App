@@ -1,4 +1,31 @@
+
+from collections import defaultdict
+
 ## making the classroom as the base class?
+
+
+class Building:
+    def __init__(self): #add others later
+        self._building = {
+        "cst":[Classroom("101"),],
+        "dennis":[],
+        "lbc":[],
+        "carpenter":[],
+        "library":[],
+        "others":[],
+        "runyan":[],
+        }
+        
+    def create_building(self, building_name):
+        self._building[building_name] = []
+        
+        
+    def create_classroom(self, building_name, classroom_name): #building is name of key
+        self.building[building_name] = Classroom(classroom_name) 
+        
+        
+        
+    
 
 class Classroom:
     def __init__(self, empty, roomNum):
@@ -9,7 +36,7 @@ class Classroom:
     def availability(self):
         ## use an if statement using the input from the google form
         # Options on QR code page: "I am entering the room" and "I am leaving the room"
-        if entering:   #entering
+        if entering:   #entering (has to come in from website to be defined)
             return self.occupied  # return red
         else:  #leaving
             return self.empty   # return green
@@ -27,10 +54,10 @@ if __name__ == "__main__":
         library:[],
         others:[],
         runyan:[],
-        runyan:[],
+        runyan:[], 
         }
     # make a file where we store all the rooms/ buildings
-    # make a function that can add/ delete rooms in that file
+    # make a function that can add/ delete rooms in that file DONE :)
 
     # make a generalized code 
 
